@@ -3,6 +3,7 @@ import HomePage from './pages/HomePage'
 import PostsList from './pages/PostsList'
 import About from './pages/About'
 import NavBar from './layout/navBar'
+import Prodotti from './pages/Prodotti'
 
 function App() {
 
@@ -13,8 +14,9 @@ function App() {
         <Routes>
           <Route element={<NavBar />}>
             <Route path='/' element={<HomePage />} />
-            <Route path='/posts' element={<PostsList />} />
             <Route path='/about' element={<About />} />
+            <Route path='/posts' element={<PostsList />} />
+            <Route path='/posts/:id' element={<Prodotti />} />
           </Route>
         </Routes>
       </BrowserRouter>
