@@ -1,9 +1,8 @@
-import { useState } from 'react'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import HomePage from './pages/HomePage'
 import PostsList from './pages/PostsList'
 import About from './pages/About'
-import './App.css'
+import NavBar from './layout/navBar'
 
 function App() {
 
@@ -12,9 +11,11 @@ function App() {
 
       <BrowserRouter>
         <Routes>
-          <Route path='/' element={<HomePage />} />
-          <Route path='/posts' element={<PostsList />} />
-          <Route path='/about' element={<About />} />
+          <Route element={<NavBar />}>
+            <Route path='/' element={<HomePage />} />
+            <Route path='/posts' element={<PostsList />} />
+            <Route path='/about' element={<About />} />
+          </Route>
         </Routes>
       </BrowserRouter>
 

@@ -29,4 +29,4 @@
 - Facciamo quindi in modo di raggiungere la pagina di dettaglio del singolo post
 
  > Bonus
-  -  Inserire nella pagina di dettaglio una navigazione che ci consenta di andare al post precedente e a quello successivo!   
+  -  Inserire nella pagina di dettaglio una navigazione che ci consenta di andare al post precedente e a quello successivo!
